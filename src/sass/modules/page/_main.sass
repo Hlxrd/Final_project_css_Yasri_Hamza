@@ -1,0 +1,280 @@
+*
+    margin: 0
+    padding: 0
+.side_bar_div
+    .side_bar_btn
+    .side_bar_area
+        width: 10%
+        height: 20%
+
+.btn
+    left: 100vw !important
+
+.carousel-inner
+    .carousel_itm1
+        height: 80vh
+        background-image: url("../../public/img/slider.jpg")
+        background-size: cover , contain
+        background-position: right
+    .carousel_itm2
+        height: 80vh
+        background-image: url("../../public/img/slider2.jpg")
+        background-size: cover
+        background-size: cover , contain
+        background-position: right
+    .carousel_itm3
+        height: 80vh
+        background-image: url("../../public/img/slider3.jpg")
+        background-size: cover
+        background-size: cover , contain
+        background-position: right
+
+    button
+        width: 30vh
+        height: 8vh
+.sec2
+    height: 70vh
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+.sec2_div1
+    height: 30%
+
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
+    column-gap: 10%
+    text-align: center
+    i
+        color: blue
+        font-size: x-large
+.div1-sec2
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+    position: relative
+    &::before
+        content: ""
+        position: absolute
+        top: 22vh
+        left: 65vw
+        width: 8vw
+        border-bottom: dotted dodgerblue 5px
+        .para2
+            width: 50%
+            text-align: center
+.div2-sec2
+    display: flex
+    align-items: center
+    justify-content: space-evenly
+    width: 100%
+    position: relative
+    &::before
+        content: ""
+        position: absolute
+        top: 4vh
+        left: 30vw
+        width: 8vw
+        border-bottom: dotted dodgerblue 5px
+
+    .child-div
+        width: 50%
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+
+        .icon
+            display: flex
+            align-items: center
+            justify-content: center
+            color: blue
+            border: 1px solid grey
+            border-radius: 50%
+            padding: 20px
+            font-size: 2rem
+    .p-child
+        width: 60%
+        text-align: center
+        .div2-sec2
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: space-evenly
+            width: 100%
+            position: relative
+            &::before
+                display: none
+            .child-div
+                display: flex
+                align-items: center
+                justify-content: center
+                flex-direction: column
+                width: 100%
+                p
+                    width: 80%
+
+    .cdiv2_sec2
+        width: 7%
+        height: 70%
+        padding: 32px
+        border: solid 1px
+        border-color: rgba(0, 0, 0, 0.278)
+        border-radius: 50%
+
+.sec2_div3
+
+    width: 100%
+    display: flex
+    justify-content: space-around
+    .cdiv3_sec2
+        width: 20%
+        text-align: center
+.sec3
+    width: 99%
+    height: 40vh
+    background-image: url("../../public/img/bread-bg.jpg")
+    background-size: cover
+    background-position: center
+    justify-content: center
+
+    .sec3_div
+        width: 100%
+        height: 100%
+        display: flex
+        margin-inline: 5px
+
+        opacity: 50%
+        &::before
+            background-color: #2677F8
+            content: ''
+
+            position: absolute
+            width: 100%
+            height: 40vh
+            opacity: 50%
+
+        .sec3_cdiv
+            width: 15%
+            height: 80%
+            display: flex
+            margin-inline: 5px
+            i
+                font-size: larger
+                padding: 10%
+                border: solid 1px
+                border-radius: 50%
+
+
+.sec5_div
+    .sec5_cdiv
+        width: 99%
+        height: 40vh
+        z-index: 2
+        justify-content: center
+
+        background-image: url("../../public/img/call-bg.jpg")
+        background-attachment: fixed
+        position: relative
+        background-size: cover , contain
+        background-position: center
+        background-repeat: no-repeat
+
+        &::before
+            background-color: #2677F8
+            content: ''
+            position: absolute
+            width: 100%
+            height: 40vh
+            opacity: 50%
+    .sec5_cdiv
+        height: 100%
+        width: 100%
+        z-index: 1
+        button
+            background-color: #fff
+            color: #2677F8
+
+.sec7_div2
+    width: 70%
+
+.sec8
+    background-color: #edefef
+    height: fit-content
+    justify-content: center
+    width: 100%
+    .sec8_div2
+        div
+
+            .card
+                height: 60vh
+
+                button
+                    width: 100%
+                    height: 15%
+.sec9
+    width: 99%
+.sec10_div
+    height: 40vh
+    background-image: url("../../public/img/client-bg.jpg")
+    background-size: cover
+    background-repeat: no-repeat
+    background-attachment: scroll
+    background-position: center
+    &::before
+        background-color: #2677F8
+        content: ''
+        display: block
+        position: absolute
+        width: 100%
+
+        opacity: 50%
+    img
+        width: 20%
+        height: 30%
+    .sec10_cdiv
+        width: 80%
+        height: 100%
+.contact_div2
+    height: 40vh
+    width: 99vw
+    background-color: #d7e4f8
+    .contact_cdiv2
+        width: 35%
+        input
+            width: 40vh
+            height: 7vh
+        button
+            width: 20vh
+            height: 7vh
+
+@media   ( max-width: 430px )
+    .sec2
+        height: fit-content
+        .div1-sec2
+            &::before
+                display: none
+        .div2-sec2
+
+            display: flex
+            flex-direction: column
+            p
+                width: 100%
+            &::before
+                display: none
+    .sec3
+        height: 100vh
+
+        align-items: center
+    .sec10_div
+        height: 100vh
+        .sec10_cdiv
+            display: flex
+            justify-content: space-around
+
+            img
+                width: 50%
+                height: 50%
