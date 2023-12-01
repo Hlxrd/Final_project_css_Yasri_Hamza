@@ -11861,14 +11861,13 @@ textarea.form-control-lg {
   width: 90vw;
   background-color: #fff !important;
 }
+.navbar .button_nav:focus {
+  box-shadow: inset -3.5em 0 0 0 var(--hover);
+}
+
 * {
   margin: 0;
   padding: 0;
-}
-
-.side_bar_div .side_bar_area {
-  width: 10%;
-  height: 20%;
 }
 
 .btn {
@@ -12083,8 +12082,8 @@ textarea.form-control-lg {
   color: #2677F8;
 }
 
-.sec7_div2 {
-  width: 70%;
+.sec7 .sec7_div2 {
+  width: 90%;
 }
 
 .sec8 {
@@ -12093,10 +12092,7 @@ textarea.form-control-lg {
   justify-content: center;
   width: 100%;
 }
-.sec8 .sec8_div2 div .card {
-  height: 60vh;
-}
-.sec8 .sec8_div2 div .card button {
+.sec8 .sec8_div2 div button {
   width: 100%;
   height: 15%;
 }
@@ -12118,7 +12114,8 @@ textarea.form-control-lg {
   content: "";
   display: block;
   position: absolute;
-  width: 100%;
+  width: fit-content;
+  height: 40vh;
   opacity: 50%;
 }
 .sec10_div img {
@@ -12168,16 +12165,29 @@ textarea.form-control-lg {
     height: 100vh;
     align-items: center;
   }
+  .sec6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sec6_div1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sec6_div1 img {
+    width: 10%;
+  }
   .sec10_div {
     height: 100vh;
+    display: flex;
+    align-items: center;
   }
   .sec10_div .sec10_cdiv {
     display: flex;
+    width: 100%;
     justify-content: space-around;
-  }
-  .sec10_div .sec10_cdiv img {
-    width: 50%;
-    height: 50%;
   }
 }
 .footer {
