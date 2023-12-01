@@ -11887,7 +11887,7 @@ textarea.form-control-lg {
   z-index: 1;
   width: 25%;
   height: 100%;
-  left: 94.5vw;
+  left: 95.5vw;
 }
 .side_bar .side_bar_div {
   background-color: #fff;
@@ -12087,6 +12087,38 @@ textarea.form-control-lg {
 .sec5_div .sec5_cdiv button {
   background-color: #fff;
   color: #2677F8;
+}
+
+.container {
+  position: relative;
+  width: 25%;
+}
+.container img {
+  width: 100%;
+  height: auto;
+}
+.container img:hover {
+  background-color: #2677F8;
+}
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+.container .btn:hover {
+  display: block;
+  background-color: blue;
+  color: black;
 }
 
 .sec7 .sec7_div2 {
