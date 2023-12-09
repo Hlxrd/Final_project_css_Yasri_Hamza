@@ -50,15 +50,17 @@
         background-size: cover , contain
         background-position: right
 
-    // button
-    //     width: 30vh
-    //     height: 8vh
+    button
+        width: 30vh
+        height: 8vh
 .sec2
+
     height: 70vh
     display: flex
     flex-direction: column
     justify-content: space-around
 .sec2_div1
+    width: 100%
     height: 30%
 
     display: flex
@@ -71,6 +73,8 @@
         color: blue
         font-size: x-large
 .div1-sec2
+    width: 100%
+    gap: 20px
     display: flex
     flex-direction: column
     align-items: center
@@ -80,13 +84,13 @@
     &::before
         content: ""
         position: absolute
-        top: 22vh
+        top: 34vh
         left: 65vw
         width: 8vw
         border-bottom: dotted dodgerblue 5px
-        .para2
-            width: 50%
-            text-align: center
+    .para2
+        width: 50%
+        text-align: center
 .div2-sec2
     display: flex
     align-items: center
@@ -102,10 +106,14 @@
         border-bottom: dotted dodgerblue 5px
 
     .child-div
+
         width: 50%
+        height: 100%
+
         display: flex
         align-items: center
-        justify-content: center
+        gap: 20px
+
         flex-direction: column
 
         .icon
@@ -137,37 +145,40 @@
         text-align: center
         z-index: 2
 .sec3
+
     width: 100%
     height: 40vh
     background-image: url("../../public/img/bread-bg.jpg")
     background-size: cover
     background-position: center
     justify-content: center
-
+    &::before
+        background-color: #2677F8
+        content: ''
+        position: absolute
+        width: 100%
+        height: 40vh
+        opacity: 40%
     .sec3_div
+
         width: 100%
         height: 100%
         display: flex
         align-items: center
-        opacity: 50%
-        &::before
-            background-color: #2677F8
-            content: ''
-            position: absolute
-            width: 100%
-            height: 40vh
-            opacity: 50%
+        opacity: 40%
 
         .sec3_cdiv
-            z-index: 2
+            z-index: 1
+
             width: 15%
             height: 80%
             display: flex
-            margin-inline: 5px
-            a
-                font-size: larger
-                padding: 10%
-                border: solid 1px
+            margin-inline: 10px
+            .h11
+
+                padding-inline: 7%
+                padding-top: 8px
+                border: solid 3px white
                 border-radius: 50%
                 width: 30%
                 height: 30%
@@ -205,14 +216,14 @@
 .container
     position: relative
     width: 25%
-    
+
     img
         width: 100%
         height: auto
         &:hover
             background-color: #2677F8
     .btn
-        
+
         position: absolute
         top: 50%
         left: 50%
@@ -297,20 +308,21 @@
     .sec3
         width: 100%
         height: 100vh
+        &::before
+            height: 100%
 
         .sec3_div
             width: 100%
             height: 100%
-            &::before
-                width: 100%
-                height: 100%
             .sec3_cdiv
                 display: flex
                 flex-direction: column-reverse
                 justify-content: center !important
                 width: 30% !important
                 height: 20%
-
+                .h11
+                    padding: 2%
+  
     .sec6
         display: flex
         flex-direction: column
