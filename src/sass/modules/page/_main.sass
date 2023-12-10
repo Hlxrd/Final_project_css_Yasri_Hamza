@@ -9,9 +9,8 @@
     border-radius: 50%
     background-color: blue
 
-    span
+span
     &:hover
-
         background-color: #fff
 
 // .btn
@@ -191,7 +190,6 @@
         height: 40vh
         z-index: 2
         justify-content: center
-
         background-image: url("../../public/img/call-bg.jpg")
         background-attachment: fixed
         position: relative
@@ -242,6 +240,14 @@
             background-color: blue
             color: black
 
+.sec6_car_div
+    .carousel
+        .carousel-inner
+            .carousel-item
+                .container_div
+                    .container
+                        button
+                            display: none
 .sec7
 
     .sec7_div2
@@ -260,25 +266,30 @@
 .sec9
     width: 99%
 .sec10_div
+    width: 99%
     height: 40vh
+    z-index: 2
+    justify-content: center
     background-image: url("../../public/img/client-bg.jpg")
-    background-size: cover
-    background-repeat: no-repeat
+    background-attachment: fixed
+    position: relative
+    background-size: cover , contain
     background-position: center
+    background-repeat: no-repeat
+    &::before
+        background-color: #2677F8
+        content: ''
+
+        position: absolute
+        width: 100%
+        height: 40vh
+        opacity: 40%
     img
         width: 20%
         height: 30%
     .sec10_cdiv
         width: 80%
         height: 100%
-    &::before
-        width: fit-content
-        height: 40vh
-        background-color: #2677F8
-        content: ''
-        display: block
-        position: absolute
-        opacity: 50%
 .contact_div2
     height: 40vh
     width: 99vw
@@ -322,7 +333,7 @@
                 height: 20%
                 .h11
                     padding: 2%
-  
+
     .sec6
         display: flex
         flex-direction: column
@@ -335,11 +346,10 @@
         img
             width: 10%
     .sec10_div
-        height: 100vh
-        display: flex
-        align-items: center
+        // height: 100vh
+        // display: flex
+        // align-items: center
         .sec10_cdiv
             display: flex
             width: 100%
-
             justify-content: space-around
